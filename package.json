@@ -9,9 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@formbricks/api": "^3.0.0",
     "next": "15.1.1",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "thin-backend": "^0.12.1",
+    "thin-backend-react": "^0.10.1"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
