@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, FormEvent } from 'react';
-// @ts-expect-error
+// @ts-expect-error - thin-backend types are not properly exported
 import { initThinBackend, createRecord } from 'thin-backend';
 import { ThinBackend } from 'thin-backend-react';
 
