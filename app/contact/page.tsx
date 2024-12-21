@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, FormEvent } from 'react';
-// @ts-ignore
+// @ts-expect-error
 import { initThinBackend, createRecord } from 'thin-backend';
 import { ThinBackend } from 'thin-backend-react';
 
