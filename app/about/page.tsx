@@ -20,7 +20,7 @@ export default function AboutPage() {
                         <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700">
                             <h2 className="text-2xl font-semibold mb-4 text-blue-600 dark:text-blue-400">Background</h2>
                             <p className="leading-relaxed text-gray-700 dark:text-gray-300">
-                                I'm a software engineer with a passion for building high-performance web applications and scalable APIs.
+                                I&apos;m a software engineer with a passion for building high-performance web applications and scalable APIs.
                                 I hold an M.S. in Computer Science from UT Austin and a B.S. in Computer Engineering from Texas A&M.
                             </p>
                         </div>
@@ -30,7 +30,7 @@ export default function AboutPage() {
                         <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700">
                             <h2 className="text-2xl font-semibold mb-4 text-purple-600 dark:text-purple-400">Experience</h2>
                             <p className="leading-relaxed text-gray-700 dark:text-gray-300">
-                                I've worked at NASA and Capital One, where I improved latency, automated deployments, and contributed
+                                I&apos;ve worked at NASA and Capital One, where I improved latency, automated deployments, and contributed
                                 to mission-critical software systems. These experiences taught me the importance of reliability, 
                                 scalability, and clean code.
                             </p>
@@ -44,7 +44,7 @@ export default function AboutPage() {
                             <h2 className="text-2xl font-semibold mb-4 text-green-600 dark:text-green-400">Interests</h2>
                             <p className="leading-relaxed text-gray-700 dark:text-gray-300">
                                 Outside of work, I enjoy exploring emerging technologies, contributing to open-source projects,
-                                and mentoring students in computer science. I'm particularly interested in cloud architecture,
+                                and mentoring students in computer science. I&apos;m particularly interested in cloud architecture,
                                 DevOps practices, and modern web development frameworks.
                             </p>
                         </div>
@@ -52,9 +52,9 @@ export default function AboutPage() {
 
                     <ScrollAnimation animation="fadeInRight" delay={400}>
                         <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700">
-                            <h2 className="text-2xl font-semibold mb-4 text-orange-600 dark:text-orange-400">Let's Connect</h2>
+                            <h2 className="text-2xl font-semibold mb-4 text-orange-600 dark:text-orange-400">Let&apos;s Connect</h2>
                             <p className="leading-relaxed text-gray-700 dark:text-gray-300 mb-4">
-                                I'm always open to discussing new opportunities, interesting projects, or just chatting about technology.
+                                I&apos;m always open to discussing new opportunities, interesting projects, or just chatting about technology.
                             </p>
                             <a
                                 href="/Lysander-Gutierrez-Resume.pdf"

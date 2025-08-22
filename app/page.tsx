@@ -1,4 +1,5 @@
 import ScrollAnimation from '../components/ScrollAnimation'
+import Image from 'next/image'
 
 export default function HomePage() {
   return (
@@ -7,10 +8,11 @@ export default function HomePage() {
       <section className="flex flex-col items-center text-center py-20 bg-gradient-to-br from-blue-50 via-white to-purple-50 dark:from-gray-900 dark:via-gray-800 dark:to-purple-900">
         <ScrollAnimation animation="scaleIn">
           <div className="relative w-48 h-48 mb-8 group">
-            <img
+            <Image
               src="/headshot.jpg"
               alt="Lysander Gutierrez"
-              className="rounded-full shadow-xl ring-4 ring-blue-100 dark:ring-blue-900 transition-transform duration-300 group-hover:scale-105"
+              fill
+              className="rounded-full shadow-xl ring-4 ring-blue-100 dark:ring-blue-900 transition-transform duration-300 group-hover:scale-105 object-cover"
             />
             <div className="absolute inset-0 rounded-full bg-gradient-to-r from-blue-400 to-purple-500 opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
           </div>
@@ -30,7 +32,7 @@ export default function HomePage() {
         
         <ScrollAnimation animation="fadeInUp" delay={600}>
           <p className="max-w-2xl text-lg text-gray-600 dark:text-gray-400 mb-12 leading-relaxed">
-            Welcome to my personal website! I'm passionate about building scalable applications, 
+            Welcome to my personal website! I&apos;m passionate about building scalable applications, 
             exploring cutting-edge technologies, and solving complex problems. Explore my background, 
             view my projects, or get in touch to collaborate.
           </p>
@@ -91,7 +93,7 @@ export default function HomePage() {
           <ScrollAnimation animation="fadeInUp">
             <h2 className="text-3xl font-bold mb-4">Ready to Build Something Amazing?</h2>
             <p className="text-xl mb-8 opacity-90">
-              Let's collaborate on your next project and bring your ideas to life.
+              Let&apos;s collaborate on your next project and bring your ideas to life.
             </p>
             <a
               href="/contact"

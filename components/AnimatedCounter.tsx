@@ -35,7 +35,6 @@ export default function AnimatedCounter({ end, duration = 2000, suffix = '', pre
     if (!isVisible) return
 
     let startTime: number
-    const startCount = 0
 
     const updateCount = (currentTime: number) => {
       if (!startTime) startTime = currentTime

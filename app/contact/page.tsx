@@ -4,7 +4,6 @@ import { useState, FormEvent } from 'react';
 // @ts-expect-error - thin-backend types are not properly exported
 import { initThinBackend, createRecord } from 'thin-backend';
 import { ThinBackend } from 'thin-backend-react';
-import ScrollAnimation from '../../components/ScrollAnimation';
 
 export default function ContactPage() {
 
@@ -42,8 +41,8 @@ export default function ContactPage() {
                     </h1>
                     <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto rounded-full"></div>
                     <p className="text-lg text-gray-600 dark:text-gray-400 mt-6 max-w-2xl mx-auto">
-                        I'm always excited to connect with fellow developers, discuss new opportunities, or chat about technology. 
-                        Let's start a conversation!
+                        I&apos;m always excited to connect with fellow developers, discuss new opportunities, or chat about technology. 
+                        Let&apos;s start a conversation!
                     </p>
                 </div>
 
@@ -109,7 +108,7 @@ export default function ContactPage() {
                         {status === 'success' && (
                             <div className="mt-6 p-4 bg-green-50 dark:bg-green-900/30 border border-green-200 dark:border-green-700 rounded-lg">
                                 <p className="text-green-700 dark:text-green-300 font-medium">
-                                    🎉 Thank you for your message! I'll get back to you soon.
+                                    🎉 Thank you for your message! I&apos;ll get back to you soon.
                                 </p>
                             </div>
                         )}
@@ -125,7 +124,7 @@ export default function ContactPage() {
                     {/* Contact Information */}
                     <div className="space-y-8">
                         <div className="bg-gradient-to-br from-blue-50 to-purple-50 dark:from-gray-800 dark:to-gray-700 p-8 rounded-2xl">
-                            <h2 className="text-2xl font-bold mb-6 text-gray-900 dark:text-white">Let's Connect</h2>
+                            <h2 className="text-2xl font-bold mb-6 text-gray-900 dark:text-white">Let&apos;s Connect</h2>
                             <div className="space-y-6">
                                 <div className="flex items-center gap-4">
                                     <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center">
@@ -167,7 +166,7 @@ export default function ContactPage() {
                             <h3 className="text-xl font-bold mb-4 text-gray-900 dark:text-white">Response Time</h3>
                             <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
                                 I typically respond to messages within 24-48 hours. For urgent matters, 
-                feel free to reach out on LinkedIn for a faster response.
+                                feel free to reach out on LinkedIn for a faster response.
                             </p>
                         </div>
 

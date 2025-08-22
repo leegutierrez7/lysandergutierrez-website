@@ -14,7 +14,7 @@ export default function ProjectsPage() {
                     </h1>
                     <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto rounded-full"></div>
                     <p className="text-lg text-gray-600 dark:text-gray-400 mt-6 max-w-2xl mx-auto">
-                        A showcase of my professional journey and the impactful projects I've contributed to at leading organizations.
+                        A showcase of my professional journey and the impactful projects I&apos;ve contributed to at leading organizations.
                     </p>
                 </div>
             </ScrollAnimation>
@@ -58,7 +58,7 @@ export default function ProjectsPage() {
                                 <div className="flex-grow">
                                     <h4 className="font-bold text-xl mb-3 text-gray-900 dark:text-white">Mission Control OS Upgrade</h4>
                                     <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-                                        Led the critical upgrade of Mission Control Center's operating system from RHEL 6 to 8, 
+                                        Led the critical upgrade of Mission Control Center&apos;s operating system from RHEL 6 to 8, 
                                         significantly enhancing security posture and system performance for space missions.
                                     </p>
                                     <div className="flex flex-wrap gap-2 mt-4">
@@ -173,7 +173,7 @@ export default function ProjectsPage() {
                                 <h3 className="font-bold text-xl text-gray-900 dark:text-white">Coming Soon</h3>
                             </div>
                             <p className="text-gray-700 dark:text-gray-300 mb-4">
-                                I'm always working on new projects! Check back soon to see what I'm building next. 
+                                I&apos;m always working on new projects! Check back soon to see what I&apos;m building next. 
                                 It might be a cloud-native application, an AI tool, or something completely different.
                             </p>
                             <div className="flex flex-wrap gap-2">
@@ -189,13 +189,13 @@ export default function ProjectsPage() {
                 <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-8 rounded-2xl text-center">
                     <h2 className="text-3xl font-bold mb-4">Interested in Collaborating?</h2>
                     <p className="text-xl mb-6 opacity-90">
-                        I'm always open to discussing new opportunities and exciting projects.
+                        I&apos;m always open to discussing new opportunities and exciting projects.
                     </p>
                     <a
                         href="/contact"
                         className="inline-block px-8 py-3 bg-white text-blue-600 rounded-lg font-semibold hover:bg-gray-100 transition-all duration-200 transform hover:scale-105 shadow-lg"
                     >
-                        Let's Talk
+                        Let&apos;s Talk
                     </a>
                 </div>
             </ScrollAnimation>
