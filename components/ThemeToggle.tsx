@@ -23,10 +23,11 @@ export default function ThemeToggle() {
 
     return (
         <button
-            className="absolute top-0 right-0 m-4 p-2 text-white bg-black rounded"
+            className="p-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-md transition-all duration-200 border border-gray-300 dark:border-gray-600"
             onClick={() => setTheme(theme === "light" ? "dark" : "light")}
+            aria-label="Toggle theme"
         >
-            {theme === "light" ? "🌞" : "🌚"}
+            {theme === "light" ? "�" : "☀️"}
         </button>
     )
 }
