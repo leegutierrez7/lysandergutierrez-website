@@ -1,6 +1,9 @@
 {
   "name": "lysandergutierrez-website",
   "version": "0.1.0",
+  "eslint": {
+    "ignoreDuringBuilds": true
+  },
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -10,11 +13,24 @@
   },
   "dependencies": {
     "@formbricks/api": "^3.0.0",
+    "@hookform/resolvers": "^5.2.1",
+    "@mdx-js/loader": "^3.1.0",
+    "@mdx-js/react": "^3.1.0",
+    "@next/bundle-analyzer": "^15.5.0",
+    "@next/mdx": "^15.5.0",
+    "@vercel/analytics": "^1.5.0",
+    "cmdk": "^1.1.1",
+    "framer-motion": "^12.23.12",
+    "gray-matter": "^4.0.3",
+    "lucide-react": "^0.540.0",
     "next": "15.1.1",
+    "next-mdx-remote": "^5.0.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-hook-form": "^7.62.0",
     "thin-backend": "^0.12.1",
-    "thin-backend-react": "^0.10.1"
+    "thin-backend-react": "^0.10.1",
+    "zod": "^4.0.17"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
@@ -23,6 +39,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "15.1.1",
+    "eslint-plugin-jsx-a11y": "^6.9.0",
     "postcss": "^8",
     "tailwindcss": "^3.4.17",
     "typescript": "^5"

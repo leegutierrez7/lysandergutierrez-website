@@ -31,7 +31,7 @@ export default function AboutPage() {
                             <h2 className="text-2xl font-semibold mb-4 text-purple-600 dark:text-purple-400">Experience</h2>
                             <p className="leading-relaxed text-gray-700 dark:text-gray-300">
                                 I&apos;ve worked at NASA and Capital One, where I improved latency, automated deployments, and contributed
-                                to mission-critical software systems. These experiences taught me the importance of reliability, 
+                                to mission-critical software systems. These experiences taught me the importance of reliability,
                                 scalability, and clean code.
                             </p>
                         </div>

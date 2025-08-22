@@ -23,32 +23,32 @@ export default function HomePage() {
             Lysander Gutierrez
           </h1>
         </ScrollAnimation>
-        
+
         <ScrollAnimation animation="fadeInUp" delay={400}>
           <p className="text-2xl text-gray-700 dark:text-gray-300 mb-8 font-light">
             Full-Stack Software Engineer | Cloud Enthusiast
           </p>
         </ScrollAnimation>
-        
+
         <ScrollAnimation animation="fadeInUp" delay={600}>
           <p className="max-w-2xl text-lg text-gray-600 dark:text-gray-400 mb-12 leading-relaxed">
-            Welcome to my personal website! I&apos;m passionate about building scalable applications, 
-            exploring cutting-edge technologies, and solving complex problems. Explore my background, 
+            Welcome to my personal website! I&apos;m passionate about building scalable applications,
+            exploring cutting-edge technologies, and solving complex problems. Explore my background,
             view my projects, or get in touch to collaborate.
           </p>
         </ScrollAnimation>
-        
+
         {/* CTA Buttons */}
         <ScrollAnimation animation="fadeInUp" delay={800}>
           <div className="flex gap-4 flex-wrap justify-center">
-            <a 
-              href="/projects" 
+            <a
+              href="/projects"
               className="px-8 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl"
             >
               View My Work
             </a>
-            <a 
-              href="/contact" 
+            <a
+              href="/contact"
               className="px-8 py-3 border-2 border-blue-600 text-blue-600 dark:text-blue-400 dark:border-blue-400 rounded-lg font-semibold hover:bg-blue-600 hover:text-white dark:hover:bg-blue-400 dark:hover:text-gray-900 transition-all duration-200 transform hover:scale-105"
             >
               Get In Touch

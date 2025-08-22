@@ -1,0 +1,16 @@
+{
+    "name": "Lysander Gutierrez Portfolio",
+    "short_name": "LG Portfolio",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#0a0a0f",
+    "description": "Portfolio showcasing software engineering projects and experience of Lysander Gutierrez.",
+    "icons": [
+        {
+            "src": "/favicon.ico",
+            "sizes": "32x32 48x48 64x64",
+            "type": "image/x-icon"
+        }
+    ]
+}
