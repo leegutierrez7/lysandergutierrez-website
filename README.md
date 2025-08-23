@@ -60,7 +60,7 @@ A modern, high-performance portfolio website built with Next.js 15, featuring ad
 ### Monitoring & Analytics
 
 - **Performance Observer API** - Core Web Vitals tracking
-- **Google Analytics** - User analytics (optional)
+- **Vercel Web Analytics** - Lightweight, privacy-friendly pageview tracking
 - **Error Boundaries** - Graceful error handling
 
 ## 📁 Project Structure
@@ -80,7 +80,7 @@ A modern, high-performance portfolio website built with Next.js 15, featuring ad
 │   ├── not-found.tsx      # 404 page
 │   └── page.tsx           # Homepage
 ├── components/            # Reusable React components
-│   ├── Analytics.tsx      # Analytics tracking
+│   ├── AnalyticsDashboard.tsx # (Mock) analytics dashboard component
 │   ├── CommandPalette.tsx # Quick navigation
 │   ├── ContactForm.tsx    # Contact form
 │   ├── PerformanceMonitor.tsx # Performance metrics
@@ -125,11 +125,7 @@ A modern, high-performance portfolio website built with Next.js 15, featuring ad
    cp .env.example .env.local
    ```
 
-   Add your configuration:
-
-   ```env
-   NEXT_PUBLIC_GA_MEASUREMENT_ID=your_ga_id_here
-   ```
+   Adjust any optional feature flags as needed in `.env.local`.
 
 4. **Run the development server**
 
@@ -237,18 +233,14 @@ npm run type-check   # Run TypeScript checks
 
 ### Built-in Analytics
 
-- Page view tracking
-- User interaction monitoring
-- Performance metrics collection
-- Scroll depth tracking
-- Click event tracking
+- Page view tracking (Vercel Analytics)
+- Performance metrics collection (Core Web Vitals)
 
 ### Privacy-Focused
 
-- IP anonymization enabled
-- No personal data collection
-- GDPR compliant setup
-- User consent respected
+- No cookies for basic analytics
+- Aggregate metrics only
+- Lightweight script
 
 ## 🔒 Security
 
@@ -305,7 +297,7 @@ This project is open source and available under the [MIT License](LICENSE).
 
 - [ ] Multi-language support (i18n)
 - [ ] CMS integration
-- [ ] Newsletter signup
+- [ ] Newsletter signup (backend integration)
 - [ ] Project filtering and search
 - [ ] Advanced animations
 - [ ] Video content support

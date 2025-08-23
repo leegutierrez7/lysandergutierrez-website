@@ -5,6 +5,8 @@ import React from 'react'
 import ThemeToggle from '../components/ThemeToggle'
 import StructuredData from '../components/StructuredData'
 import { isBlogEnabled } from '../lib/featureFlags'
+// Vercel Analytics (aliased to avoid confusion with local components/Analytics.tsx)
+import { Analytics as VercelAnalytics } from '@vercel/analytics/next'
 
 export const metadata: Metadata = {
   title: 'Lysander Gutierrez | Full-Stack Software Engineer',
@@ -139,6 +141,8 @@ export default function RootLayout({
         >
           &copy; {new Date().getFullYear()} Lysander Gutierrez
         </footer>
+  {/* Vercel Analytics (replaces legacy Google Analytics component) */}
+  <VercelAnalytics />
       </body>
     </html>
   )
