@@ -117,9 +117,9 @@ export default function AboutPage() {
                         </div>
                         <div className="space-y-2">
                             <div className="text-orange-600 dark:text-orange-400">
-                                <AnimatedCounter end={2} />
+                                <AnimatedCounter end={1} />
                             </div>
-                            <p className="text-gray-600 dark:text-gray-400 font-medium">Fortune 500 Companies</p>
+                            <p className="text-gray-600 dark:text-gray-400 font-medium">Fortune 500 Company (Capital One)</p>
                         </div>
                     </div>
                 </div>
