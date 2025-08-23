@@ -4,7 +4,7 @@ import Link from 'next/link'
 import React from 'react'
 import ThemeToggle from '../components/ThemeToggle'
 import StructuredData from '../components/StructuredData'
-import { isBlogEnabled } from '../lib/featureFlags'
+import { isBlogEnabled, loadFeatureFlags } from '../lib/featureFlags'
 // Vercel Analytics (aliased to avoid confusion with local components/Analytics.tsx)
 import { Analytics as VercelAnalytics } from '@vercel/analytics/next'
 
@@ -63,11 +63,13 @@ export const metadata: Metadata = {
     },
   },
 }
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
+  // Load feature flags (Edge Config aware) server-side
+  const flags = await loadFeatureFlags()
   return (
     <html lang="en">
       <head>
@@ -85,6 +87,18 @@ export default function RootLayout({
         <link rel="manifest" href="/manifest.webmanifest" />
       </head>
       <body className="bg-white font-sans text-black antialiased selection:bg-blue-600 selection:text-white dark:bg-gray-900 dark:text-white">
+        {/* Emit feature flags for Vercel Web Analytics (client picks them up) */}
+        <script
+          id="__FEATURE_FLAGS__"
+          type="application/json"
+          data-source="feature-flags"
+          // Keep payload tiny & non-PII
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              blog: flags.blogEnabled,
+            }),
+          }}
+        />
         <StructuredData type="website" />
         <a
           href="#main"
