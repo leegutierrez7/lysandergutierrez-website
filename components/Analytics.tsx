@@ -4,6 +4,6 @@
 // if any stale references remain in feature branches.
 
 export default function Analytics() {
-    if (process.env.NODE_ENV !== 'production') return null
-    return null
+  if (process.env.NODE_ENV !== 'production') return null
+  return null
 }

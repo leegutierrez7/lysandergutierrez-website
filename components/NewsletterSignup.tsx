@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import { Mail, Check, AlertCircle, Loader2 } from 'lucide-react'
+import { track } from '@vercel/analytics'
 
 interface NewsletterResponse {
   success: boolean
@@ -53,12 +54,11 @@ export default function NewsletterSignup({
         setMessage(data.message || 'Successfully subscribed to newsletter!')
         setEmail('')
 
-        // Track subscription event
-        if (typeof window !== 'undefined' && window.gtag) {
-          window.gtag('event', 'newsletter_signup', {
-            event_category: 'engagement',
-            event_label: email,
-          })
+        // Track subscription event (privacy-friendly, no PII payload)
+        try {
+          track('newsletter_signup', { component: 'NewsletterSignup' })
+        } catch (_e) {
+          // Silently ignore tracking errors
         }
       } else {
         setStatus('error')

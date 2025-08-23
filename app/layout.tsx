@@ -141,8 +141,8 @@ export default function RootLayout({
         >
           &copy; {new Date().getFullYear()} Lysander Gutierrez
         </footer>
-  {/* Vercel Analytics (replaces legacy Google Analytics component) */}
-  <VercelAnalytics />
+        {/* Vercel Analytics (replaces legacy Google Analytics component) */}
+        <VercelAnalytics />
       </body>
     </html>
   )
