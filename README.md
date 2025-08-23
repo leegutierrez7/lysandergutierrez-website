@@ -5,14 +5,11 @@ A modern, high-performance portfolio website built with Next.js 15, featuring ad
 ## 🚀 Features
 
 ### Core Features
-- **Next.js 15** with App Router for optimal performance
-- **TypeScript** for type safety and better development experience
-- **Tailwind CSS** for efficient styling
-- **Dark/Light mode** with system preference detection
-- **Responsive design** that works on all devices
-- **SEO optimized** with structured data and meta tags
+
+- Can be disabled via `NEXT_PUBLIC_FEATURE_BLOG=false` to hide all blog pages, navigation, search entries, and structured data.
 
 ### Enhanced Features
+
 - **Advanced Animations** powered by Framer Motion
 - **Blog System** with MDX support for rich content
 - **Command Palette** (⌘K) for quick navigation
@@ -23,6 +20,7 @@ A modern, high-performance portfolio website built with Next.js 15, featuring ad
 - **Accessibility compliant** with WCAG guidelines
 
 ### Performance Optimizations
+
 - **Image optimization** with Next.js Image component
 - **Bundle analysis** and optimization
 - **Code splitting** for faster loading
@@ -32,6 +30,7 @@ A modern, high-performance portfolio website built with Next.js 15, featuring ad
 ## 🛠️ Tech Stack
 
 ### Frontend
+
 - **Next.js 15** - React framework with App Router
 - **React 19** - UI library with latest features
 - **TypeScript** - Type-safe JavaScript
@@ -40,22 +39,26 @@ A modern, high-performance portfolio website built with Next.js 15, featuring ad
 - **Lucide React** - Beautiful icons
 
 ### Blog & Content
+
 - **MDX** - Markdown with JSX components
 - **Gray Matter** - Frontmatter parsing
 - **Next MDX Remote** - Server-side MDX rendering
 
 ### Forms & Validation
+
 - **React Hook Form** - Performant forms
 - **Zod** - Schema validation
 - **@hookform/resolvers** - Form validation integration
 
 ### Developer Experience
+
 - **ESLint** - Code linting
 - **Prettier** - Code formatting
 - **TypeScript** - Type checking
 - **Hot Reload** - Fast development
 
 ### Monitoring & Analytics
+
 - **Performance Observer API** - Core Web Vitals tracking
 - **Google Analytics** - User analytics (optional)
 - **Error Boundaries** - Graceful error handling
@@ -97,32 +100,39 @@ A modern, high-performance portfolio website built with Next.js 15, featuring ad
 ## 🚀 Getting Started
 
 ### Prerequisites
+
 - Node.js 18+ and npm
 - Git
 
 ### Installation
 
 1. **Clone the repository**
+
    ```bash
    git clone https://github.com/leegutierrez7/lysandergutierrez-website.git
    cd lysandergutierrez-website
    ```
 
 2. **Install dependencies**
+
    ```bash
    npm install
    ```
 
 3. **Set up environment variables**
+
    ```bash
    cp .env.example .env.local
    ```
+
    Add your configuration:
+
    ```env
    NEXT_PUBLIC_GA_MEASUREMENT_ID=your_ga_id_here
    ```
 
 4. **Run the development server**
+
    ```bash
    npm run dev
    ```
@@ -145,11 +155,11 @@ npm start
 2. Add frontmatter with required fields:
    ```yaml
    ---
-   title: "Your Post Title"
-   description: "Post description"
-   date: "2024-01-01"
-   tags: ["tag1", "tag2"]
-   author: "Your Name"
+   title: 'Your Post Title'
+   description: 'Post description'
+   date: '2024-01-01'
+   tags: ['tag1', 'tag2']
+   author: 'Your Name'
    ---
    ```
 3. Write your content in Markdown/MDX
@@ -158,6 +168,7 @@ npm start
 ### Adding Projects
 
 Edit `data/projects.ts` to add new projects with the following structure:
+
 ```typescript
 {
   slug: 'project-slug',
@@ -177,6 +188,7 @@ Edit `data/projects.ts` to add new projects with the following structure:
 ## ⚡ Performance Features
 
 ### Core Web Vitals Monitoring
+
 - **First Contentful Paint (FCP)** tracking
 - **Largest Contentful Paint (LCP)** monitoring
 - **First Input Delay (FID)** measurement
@@ -184,6 +196,7 @@ Edit `data/projects.ts` to add new projects with the following structure:
 - **Time to First Byte (TTFB)** monitoring
 
 ### Optimization Techniques
+
 - Image optimization with next/image
 - Code splitting at route level
 - Component-level lazy loading
@@ -193,16 +206,19 @@ Edit `data/projects.ts` to add new projects with the following structure:
 ## 🎨 Customization
 
 ### Styling
+
 - Modify `tailwind.config.js` for design system changes
 - Update `app/globals.css` for global styles
 - Component-specific styles in individual files
 
 ### Animations
+
 - Customize animations in `components/ScrollAnimation.tsx`
 - Add new animation variants as needed
 - Control animation timing and easing
 
 ### Content
+
 - Update personal information in components
 - Modify project data in `data/projects.ts`
 - Add blog posts in `content/blog/`
@@ -220,6 +236,7 @@ npm run type-check   # Run TypeScript checks
 ## 📊 Analytics & Monitoring
 
 ### Built-in Analytics
+
 - Page view tracking
 - User interaction monitoring
 - Performance metrics collection
@@ -227,6 +244,7 @@ npm run type-check   # Run TypeScript checks
 - Click event tracking
 
 ### Privacy-Focused
+
 - IP anonymization enabled
 - No personal data collection
 - GDPR compliant setup
@@ -259,11 +277,13 @@ npm run type-check   # Run TypeScript checks
 ## 🚀 Deployment
 
 ### Vercel (Recommended)
+
 1. Connect your GitHub repository
 2. Set environment variables
 3. Deploy automatically on push
 
 ### Other Platforms
+
 - Netlify
 - AWS Amplify
 - Google Cloud Platform

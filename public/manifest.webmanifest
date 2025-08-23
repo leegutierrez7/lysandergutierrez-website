@@ -1,16 +1,58 @@
 {
-    "name": "Lysander Gutierrez Portfolio",
-    "short_name": "LG Portfolio",
-    "start_url": "/",
-    "display": "standalone",
-    "background_color": "#ffffff",
-    "theme_color": "#0a0a0f",
-    "description": "Portfolio showcasing software engineering projects and experience of Lysander Gutierrez.",
-    "icons": [
+  "name": "Lysander Gutierrez - Full-Stack Software Engineer",
+  "short_name": "LG Portfolio",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "id": "/",
+  "background_color": "#ffffff",
+  "theme_color": "#3b82f6",
+  "description": "Personal website showcasing my experience as a Software Engineer at NASA and Capital One.",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "16x16 32x32 48x48 64x64",
+      "type": "image/x-icon"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "View Projects",
+      "short_name": "Projects",
+      "description": "Browse my software engineering projects",
+      "url": "/projects",
+      "icons": [
         {
-            "src": "/favicon.ico",
-            "sizes": "32x32 48x48 64x64",
-            "type": "image/x-icon"
+          "src": "/favicon.ico",
+          "sizes": "192x192"
         }
-    ]
+      ]
+    },
+    {
+      "name": "Read Blog",
+      "short_name": "Blog",
+      "description": "Read my latest blog posts",
+      "url": "/blog",
+      "icons": [
+        {
+          "src": "/favicon.ico",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Contact Me",
+      "short_name": "Contact",
+      "description": "Get in touch with me",
+      "url": "/contact",
+      "icons": [
+        {
+          "src": "/favicon.ico",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ],
+  "categories": ["business", "productivity", "utilities"]
 }

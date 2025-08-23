@@ -1,0 +1,120 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "blog": "Blog",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Lysander Gutierrez",
+    "subtitle": "Full-Stack Software Engineer | Cloud Enthusiast",
+    "description": "Welcome to my personal website! I'm passionate about building scalable applications, exploring cutting-edge technologies, and solving complex problems. Explore my background, view my projects, or get in touch to collaborate.",
+    "viewWork": "View My Work",
+    "getInTouch": "Get In Touch"
+  },
+  "skills": {
+    "title": "Technologies I Work With",
+    "items": {
+      "react": "React/Next.js",
+      "node": "Node.js",
+      "typescript": "TypeScript",
+      "python": "Python",
+      "cloud": "AWS/Cloud",
+      "docker": "Docker",
+      "go": "Go",
+      "postgresql": "PostgreSQL"
+    }
+  },
+  "cta": {
+    "title": "Ready to Build Something Amazing?",
+    "description": "Let's collaborate on your next project and bring your ideas to life.",
+    "startConversation": "Start a Conversation"
+  },
+  "footer": {
+    "copyright": "© {year} Lysander Gutierrez"
+  },
+  "projects": {
+    "title": "Projects",
+    "description": "A collection of projects I've worked on",
+    "viewProject": "View Project",
+    "viewCode": "View Code",
+    "liveDemo": "Live Demo",
+    "categories": {
+      "all": "All",
+      "web": "Web",
+      "mobile": "Mobile",
+      "api": "API",
+      "tool": "Tool",
+      "library": "Library"
+    },
+    "status": {
+      "active": "Active",
+      "archived": "Archived",
+      "inProgress": "In Progress"
+    }
+  },
+  "blog": {
+    "title": "Blog",
+    "description": "Thoughts on software development and technology",
+    "readMore": "Read More",
+    "readingTime": "{minutes} min read",
+    "publishedOn": "Published on {date}",
+    "tags": "Tags",
+    "allPosts": "All Posts",
+    "latestPosts": "Latest Posts"
+  },
+  "contact": {
+    "title": "Contact",
+    "description": "Get in touch with me",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Message",
+      "send": "Send Message",
+      "sending": "Sending...",
+      "success": "Message sent successfully!",
+      "error": "Error sending message. Please try again.",
+      "required": "This field is required",
+      "invalidEmail": "Please enter a valid email address"
+    },
+    "info": {
+      "email": "Email",
+      "linkedin": "LinkedIn",
+      "github": "GitHub",
+      "location": "Location"
+    }
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "tryAgain": "Try Again",
+    "goHome": "Go Home",
+    "skipToContent": "Skip to content",
+    "darkMode": "Dark Mode",
+    "lightMode": "Light Mode",
+    "toggleTheme": "Toggle Theme"
+  },
+  "search": {
+    "placeholder": "Search projects, blog posts, skills...",
+    "noResults": "No results found",
+    "resultsCount": "{count} result{s}",
+    "categories": {
+      "page": "Page",
+      "project": "Project",
+      "blog": "Blog",
+      "skill": "Skill"
+    }
+  },
+  "about": {
+    "title": "About Me",
+    "description": "Learn more about my background and experience",
+    "sections": {
+      "introduction": "Introduction",
+      "experience": "Experience",
+      "education": "Education",
+      "skills": "Skills"
+    }
+  }
+}

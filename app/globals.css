@@ -22,9 +22,17 @@ html {
 body {
   color: var(--foreground-light);
   background: var(--background-light);
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-family:
+    'Inter',
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    sans-serif;
   line-height: 1.6;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
 }
 
 .dark body {
@@ -113,6 +121,37 @@ button:focus {
 /* Custom gradient text */
 .gradient-text {
   @apply bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent;
+}
+
+/* Safe gradient text that prevents clipping */
+.gradient-text-safe {
+  background: linear-gradient(to right, #2563eb, #9333ea);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  /* Fallback for browsers that don't support gradient text */
+  color: #2563eb;
+}
+
+@supports not (-webkit-background-clip: text) {
+  .gradient-text-safe {
+    color: #2563eb;
+  }
+}
+
+/* Gradient shadow effect - reliable alternative to gradient text */
+.gradient-shadow {
+  text-shadow:
+    0 0 20px rgba(147, 51, 234, 0.3),
+    0 0 40px rgba(147, 51, 234, 0.2);
+  filter: drop-shadow(0 2px 4px rgba(37, 99, 235, 0.1));
+}
+
+.dark .gradient-shadow {
+  text-shadow:
+    0 0 30px rgba(147, 197, 253, 0.4),
+    0 0 60px rgba(147, 197, 253, 0.2);
+  filter: drop-shadow(0 2px 8px rgba(147, 197, 253, 0.2));
 }
 
 /* Glass morphism effect */
